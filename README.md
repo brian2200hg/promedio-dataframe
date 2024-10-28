@@ -1,4 +1,5 @@
 # promedio-dataframe
+este programa calcula la edad de las personas.
 
 # Paso 1: Importar las librerías necesarias: 
 
@@ -10,8 +11,8 @@ import matplotlib.pyplot as plt
 
 Aquí tienes un ejemplo con una columna de "Edad":
 data = {
-    'Nombre': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
-    'Edad': [24, 30, 22, 29, 25]
+    'Nombre': ['joa', 'fabri', 'nacho', 'david', 'luca'],
+    'Edad': [17, 18, 17, 17, 18]
 }
 
 df = pd.DataFrame(data)
@@ -38,8 +39,8 @@ import matplotlib.pyplot as plt
 
 # Crear un DataFrame
 data = {
-    'Nombre': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
-    'Edad': [24, 30, 22, 29, 25]
+    'Nombre': ['joa', 'fabri', 'nacho', 'David', 'luca'],
+    'Edad': [17, 18, 17, 17, 18]
 }
 
 df = pd.DataFrame(data)
