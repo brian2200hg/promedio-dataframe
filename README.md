@@ -1,32 +1,57 @@
 # promedio-dataframe
 
-# Abre tu terminal y clona el repositorio:
-git clone https://github.com/tu_usuario/promedio-dataframe.git
-cd promedio-dataframe
+# Paso 1: Importar las librerías necesarias: 
 
-# Crea un archivo Python dentro del directorio del repositorio:
-touch calcular_promedio.py
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-# Abre calcular_promedio.py en tu editor de texto favorito y copia el siguiente código:
+# Paso 2: Crear un DataFrame (o cargar uno existente):
+
+Aquí tienes un ejemplo con una columna de "Edad":
+data = {
+    'Nombre': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Edad': [24, 30, 22, 29, 25]
+}
+
+df = pd.DataFrame(data)
+
+# Paso 3: Calcular el promedio de la columna "Edad":
+
+Calculamos el promedio de la columna "Edad":
+promedio_edad = df['Edad'].mean()
+print(f'El promedio de edad es: {promedio_edad}')
+# Paso 4: Visualizarlo usando Seaborn:
+
+Vamos a crear un gráfico de barras que muestre el promedio de edad:
+sns.barplot(x=['Promedio de Edad'], y=[promedio_edad])
+plt.title('Promedio de Edad')
+plt.ylabel('Edad')
+plt.ylim(0, 40)  # Ajustar el límite del eje Y si es necesario
+plt.show()
+
+# Código Completo
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Crear un DataFrame
 data = {
-    'Nombre': ['A', 'B', 'C', 'D', 'E'],
-    'Valor': [10, 20, 30, 40, 50]
+    'Nombre': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Edad': [24, 30, 22, 29, 25]
 }
 
 df = pd.DataFrame(data)
 
-# Calcular el promedio de la columna "Valor"
-promedio = df['Valor'].mean()
-print(f'El promedio es: {promedio}')
+# Calcular el promedio de la columna "Edad"
+promedio_edad = df['Edad'].mean()
+print(f'El promedio de edad es: {promedio_edad}')
 
 # Visualizar el promedio usando Seaborn
-sns.barplot(x=['Promedio'], y=[promedio])
-plt.title('Promedio de la Columna Valor')
-plt.ylabel('Promedio')
+sns.barplot(x=['Promedio de Edad'], y=[promedio_edad])
+plt.title('Promedio de Edad')
+plt.ylabel('Edad')
+plt.ylim(0, 40)  # Ajustar el límite del eje Y si es necesario
 plt.show()
 
