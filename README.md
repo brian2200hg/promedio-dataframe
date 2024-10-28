@@ -55,3 +55,11 @@ plt.ylabel('Edad')
 plt.ylim(0, 40)  # Ajustar el límite del eje Y si es necesario
 plt.show()
 
+Resumen
+Este código realiza las siguientes tareas:
+
+Crea un conjunto de datos con nombres y edades.
+Calcula el promedio de la edad.
+Visualiza el promedio en un gráfico de barras.
+Este proceso es útil para entender cómo se distribuyen los datos y cómo interactuar con ellos utilizando herramientas de análisis y visualización en Python.
+
